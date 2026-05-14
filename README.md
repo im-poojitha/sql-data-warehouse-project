@@ -36,9 +36,12 @@ The data architecture for this project follows Medallion Architecture Bronze, Si
 3. **Gold Layer:** Business-ready data modeled into a star schema required for reporting and analytics.
 
 ## ↔️ Data Flow
+- The Data Flow diagram shows house source data is moved, transformed and prepared for analytical and reporting purposes.
 <img width="1089" height="489" alt="image" src="https://github.com/user-attachments/assets/0200c227-6e56-4500-8cc2-813fe17b7daf" />
 
 ## Ⓜ️ Data Model
+- In a Star Schema, the **dimension** tables are related to the **fact** tables with 1-to-Many (1:N) relationship.
+- In a fact table, customer can have multiple records as they can order multiple times (so, multiple events), whereas, in dimension table, each customer has only one record describing them.
 <img width="1051" height="539" alt="image" src="https://github.com/user-attachments/assets/70a43e4f-bd24-4730-9cd3-99ec86bb9e21" />
 
 ## 🛡️ License
