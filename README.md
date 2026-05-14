@@ -29,11 +29,17 @@ These insights empower stakeholders with key business metrics, enabling strategi
 
 ## 🏗️ Data Architecture
 The data architecture for this project follows Medallion Architecture Bronze, Silver, and Gold layers:
-<img width="1193" height="601" alt="image" src="https://github.com/user-attachments/assets/3b4694c5-034d-4848-ae6e-3093ac0d3845" />
+<img width="1193" height="739" alt="image" src="https://github.com/user-attachments/assets/2f565a11-fbe6-4a0f-ac34-a7eed4c077a9" />
 
 1. **Bronze Layer:** Stores raw data as-is from the source systems. Data is ingested from CSV Files into SQL Server Database.
 2. **Silver Layer:** This layer includes data cleansing, standardization, and normalization processes to prepare data for analysis.
-3. **Gold Layer:** Houses business-ready data modeled into a star schema required for reporting and analytics.
+3. **Gold Layer:** Business-ready data modeled into a star schema required for reporting and analytics.
+
+## ↔️ Data Flow
+<img width="1089" height="489" alt="image" src="https://github.com/user-attachments/assets/0200c227-6e56-4500-8cc2-813fe17b7daf" />
+
+## Ⓜ️ Data Model
+<img width="1051" height="539" alt="image" src="https://github.com/user-attachments/assets/70a43e4f-bd24-4730-9cd3-99ec86bb9e21" />
 
 ## 🛡️ License
 This project is licensed under the MIT License. You are free to use, modify, and share this project with proper attribution.
